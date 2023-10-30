@@ -12,24 +12,22 @@ namespace Ejercicio4.Controladores
             CalculoIntfz calcular = new CalculoImpl();
 
             bool seguir;
-            int segundoNum;
-            long resultado;
+            int num;
 
-            resultado = preguntar.preguntarNum();
-            segundoNum = preguntar.preguntarNum();
+            num = preguntar.preguntarNum();
 
             do
             {
                 Console.Clear();
 
-                resultado = calcular.calculoNumero(resultado, segundoNum);
+                calcular.calculoNumero(num);
 
                 seguir = preguntar.preguntarSeguir();
 
                 if (seguir == true)
                 {
                     Console.Clear();
-                    segundoNum = preguntar.preguntarNum();
+                    num = preguntar.preguntarNum();
                 }
 
             } while (seguir != false);

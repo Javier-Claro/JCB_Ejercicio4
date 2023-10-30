@@ -8,7 +8,7 @@ namespace JCb_Ejercicio4.Servicios
 {
     internal interface CalculoIntfz
     {
-        public long calculoNumero(long num1, int num2);
+        public void calculoNumero(int num);
         
     }
 }

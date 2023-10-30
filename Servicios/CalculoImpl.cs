@@ -8,13 +8,15 @@ namespace JCb_Ejercicio4.Servicios
 {
     internal class CalculoImpl : CalculoIntfz
     {
-        public long calculoNumero(long num1, int num2) { 
+        public void calculoNumero(int num) { 
 
-        long resultado;
+        long resultado = 1;
 
-        resultado = num1 * num2;
+        for (int i = 1; i <= num; i++)
+            {
+                resultado = resultado * i;
+            }
             Console.WriteLine("\n\tEl resultado es: {0}", resultado);
-            return resultado;
         }
     }
 }
